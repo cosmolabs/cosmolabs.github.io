@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-06-25 vie 16:56 -->
+<!-- 2021-06-27 dom 12:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>rsync</title>
@@ -221,9 +221,9 @@
 <div id="content">
 <h1 class="title">rsync</h1>
 
-<div id="outline-container-org093fedd" class="outline-2">
-<h2 id="org093fedd">ABOUT:</h2>
-<div class="outline-text-2" id="text-org093fedd">
+<div id="outline-container-orge2a6662" class="outline-2">
+<h2 id="orge2a6662">ABOUT:</h2>
+<div class="outline-text-2" id="text-orge2a6662">
 <p>
 <b>rsync</b> (remote synchronization) is a command line utility for data backups and synchronization of files and directories between two different locations. The locations may be with in a computer and an external harddrive or they even located remotely. It follows the ture unix philosphy and written using C programming language.
 It&rsquo;s delata-transfer algorithm, which reduces the amount of data sent over the network by sending only the differences stands out and differentiate it from traditional cp command.
@@ -234,7 +234,7 @@ To know more or to explore different options available, visit man page from your
 </p>
 
 <div class="org-src-container">
-<pre class="src src-shell" id="orga851919">man rsync
+<pre class="src src-shell" id="org777ef6a">man rsync
 </pre>
 </div>
 
@@ -244,9 +244,9 @@ To know more or to explore different options available, visit man page from your
 </div>
 </div>
 
-<div id="outline-container-org829812e" class="outline-2">
-<h2 id="org829812e">USEFUL OPTIONS:</h2>
-<div class="outline-text-2" id="text-org829812e">
+<div id="outline-container-org259e919" class="outline-2">
+<h2 id="org259e919">USEFUL OPTIONS:</h2>
+<div class="outline-text-2" id="text-org259e919">
 <p>
 rsync is one of the versatile file copying tools. There are so many options which serves their own purpose. Some of the most useful options are:
 </p>
@@ -262,7 +262,7 @@ rsync is one of the versatile file copying tools. There are so many options whic
 </ul>
 
 <div class="org-src-container">
-<pre class="src src-sh" id="org091e2e0"><span style="color: #5B6268;">#</span><span style="color: #5B6268;">copying the content of dir1 into dir2, by deleting contents that are not in dir1,</span>
+<pre class="src src-sh" id="orgfb637a5"><span style="color: #5B6268;">#</span><span style="color: #5B6268;">copying the content of dir1 into dir2, by deleting contents that are not in dir1,</span>
 <span style="color: #5B6268;">#</span><span style="color: #5B6268;">and using the checksum to </span><span style="color: #5B6268;">find</span><span style="color: #5B6268;"> the differences.</span>
 rsync -avc --delete dir1/ dir2/
 </pre>
@@ -270,9 +270,9 @@ rsync -avc --delete dir1/ dir2/
 </div>
 </div>
 
-<div id="outline-container-org4c1c9e1" class="outline-2">
-<h2 id="org4c1c9e1">A BASH SCRIPT:</h2>
-<div class="outline-text-2" id="text-org4c1c9e1">
+<div id="outline-container-org25426a4" class="outline-2">
+<h2 id="org25426a4">A BASH SCRIPT:</h2>
+<div class="outline-text-2" id="text-org25426a4">
 <p>
 I have created a script which intelligently copies the data from source to destination directory. You can find the script in my github repository.
 <a href="https://github.com/cosmolabs/linux-configs/blob/master/rsync/synchronize.sh">Sync 2 dirs intelligently!!!</a>
@@ -280,12 +280,13 @@ I have created a script which intelligently copies the data from source to desti
 </div>
 </div>
 
-<div id="outline-container-org0c9cc6c" class="outline-2">
-<h2 id="org0c9cc6c">REFERENCES:</h2>
-<div class="outline-text-2" id="text-org0c9cc6c">
+<div id="outline-container-org9c23f70" class="outline-2">
+<h2 id="org9c23f70">REFERENCES:</h2>
+<div class="outline-text-2" id="text-org9c23f70">
 <ol class="org-ol">
 <li><a href="https://linux.die.net/man/1/rsync">rsync man page</a></li>
 <li><a href="https://en.wikipedia.org/wiki/Rsync">rsync wiki</a></li>
+<li><a href="https://cheat.sh/rsync">rsync - cheat.sh</a> - <i>curl cheat.sh/rsync</i> on CLI</li>
 <li><a href="https://www.youtube.com/watch?v=lwQIZzoqJTU&amp;list=WL&amp;index=1">LearnLinuxTV - Transferring files with rsync</a></li>
 <li><a href="https://www.youtube.com/watch?v=qE77MbDnljA&amp;list=WL&amp;index=2">Corey Schafer - How To Use The rsync Command</a></li>
 </ol>
@@ -294,7 +295,7 @@ I have created a script which intelligently copies the data from source to desti
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ganesh Kuramsetti</p>
-<p class="date">Created: 2021-06-25 vie 16:56</p>
+<p class="date">Created: 2021-06-27 dom 12:01</p>
 </div>
 </body>
 </html>
