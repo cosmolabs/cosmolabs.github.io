@@ -3,12 +3,12 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-06-27 dom 12:45 -->
+<!-- 2021-07-12 Mon 20:14 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>rsync</title>
-<meta name="author" content="Ganesh Kuramsetti" />
-<meta name="description" content="adding rsync to my github website" />
+<title>COSMOS</title>
+<meta name="author" content="GANESH KURAMSETTI" />
+<meta name="description" content="i About our Cosmos." />
 <meta name="generator" content="Org Mode" />
 <style type="text/css">
  <!--/*--><![CDATA[/*><!--*/
@@ -219,85 +219,31 @@
 </head>
 <body>
 <div id="content">
-<h1 class="title">rsync</h1>
-
-<div id="outline-container-orgb178500" class="outline-2">
-<h2 id="orgb178500">ABOUT:</h2>
-<div class="outline-text-2" id="text-orgb178500">
+<h1 class="title">COSMOS</h1>
 <p>
-<b>rsync</b> (remote synchronization) is a command line utility for data backups and synchronization of files and directories between two different locations. The locations may be with in a computer and an external harddrive or they even located remotely. It follows the ture unix philosphy and written using C programming language.
-It&rsquo;s delata-transfer algorithm, which reduces the amount of data sent over the network by sending only the differences stands out and differentiate it from traditional cp command.
+Hello, from cosmolabs!!! A place where you explore your self!!
 </p>
 
-<p>
-To know more or to explore different options available, visit man page from your terminal.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-shell" id="org8fbe750">man rsync
-</pre>
-</div>
-
-
-<div id="orgfc81588" class="figure">
-<p><img src="./man_rsync.png" alt="man_rsync.png" />
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org8f61f62" class="outline-2">
-<h2 id="org8f61f62">USEFUL OPTIONS:</h2>
-<div class="outline-text-2" id="text-org8f61f62">
-<p>
-rsync is one of the versatile file copying tools. There are so many options which serves their own purpose. Some of the most useful options are:
-</p>
-<ul class="org-ul">
-<li>&#x2013;archive, -a - archive mode, it&rsquo;s a mixture of different options which includes recursion, symlinks         restoration, preserves permissions, timestamps, groups and owners.</li>
-<li>&#x2013;verbose, -v - writes the actions going on to a standard output.</li>
-<li>&#x2013;update, -u - ignores alread transfered files unless they are newer.</li>
-<li>&#x2013;delete - deletes the files that are in destination but not in source.</li>
-<li>-P - indicates progress.</li>
-<li>-z - compressess the data while transferring.</li>
-<li>-h - human readable</li>
-<li>-c - uses checksum to differentiate source and destination rather than time.</li>
-</ul>
-
-<div class="org-src-container">
-<pre class="src src-sh" id="org2787c83"><span style="color: #5B6268;">#</span><span style="color: #5B6268;">copying the content of dir1 into dir2, by deleting contents that are not in dir1,</span>
-<span style="color: #5B6268;">#</span><span style="color: #5B6268;">and using the checksum to </span><span style="color: #5B6268;">find</span><span style="color: #5B6268;"> the differences.</span>
-rsync -avc --delete dir1/ dir2/
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org51587c2" class="outline-2">
-<h2 id="org51587c2">A BASH SCRIPT:</h2>
-<div class="outline-text-2" id="text-org51587c2">
-<p>
-I have created a script which intelligently copies the data from source to destination directory. You can find the script in my github repository.
-<a href="https://github.com/cosmolabs/linux-configs/blob/master/rsync/synchronize.sh">Sync 2 dirs intelligently!!!</a>
-</p>
-</div>
-</div>
-
-<div id="outline-container-org1a87757" class="outline-2">
-<h2 id="org1a87757">REFERENCES:</h2>
-<div class="outline-text-2" id="text-org1a87757">
 <ol class="org-ol">
-<li><a href="https://linux.die.net/man/1/rsync">rsync man page</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Rsync">rsync wiki</a></li>
-<li><a href="https://cheat.sh/rsync">rsync - cheat.sh</a> - <i>curl cheat.sh/rsync</i> on CLI</li>
-<li><a href="https://www.youtube.com/watch?v=lwQIZzoqJTU&amp;list=WL&amp;index=1">LearnLinuxTV - Transferring files with rsync</a></li>
-<li><a href="https://www.youtube.com/watch?v=qE77MbDnljA&amp;list=WL&amp;index=2">Corey Schafer - How To Use The rsync Command</a></li>
+<li>Do you ever wondered looking at night sky and felt that you want to know how it works? Check out an excellent piece of open source software called <a href="./stellarium.html">stellarium</a>.</li>
 </ol>
-</div>
-</div>
+
+<hr />
+
+<p>
+Github Page - <a href="https://github.com/cosmolabs">https://github.com/cosmolabs</a>
+Youtube channel - ihttps://www.youtube.com/channel/UCy7FYIeM0naiPmFkiDOVLhw
+</p>
+
+<hr />
+
+<p>
+<i>[Site Under Construction, might contain corrections.]</i>
+</p>
 </div>
 <div id="postamble" class="status">
-<p class="author">Author: Ganesh Kuramsetti</p>
-<p class="date">Created: 2021-06-27 dom 12:45</p>
+<p class="author">Author: GANESH KURAMSETTI</p>
+<p class="date">Created: 2021-07-12 Mon 20:14</p>
 </div>
 </body>
 </html>
