@@ -1,30 +1,47 @@
+@font-face {
+  font-family: CustomFont;
+  src: url(../fonts/Rubik-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: CodeFont;
+  src: url(../fonts/SourceCodePro-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: HandFont;
+  src: url(../fonts/PatrickHand-Regular.ttf);
+}
+
 @media all
 {
   body {
     background: #2e3440;
     margin: 10px 8% 10px 8%;
-    font-family: Roboto;
+    font-family: CustomFont;
     text-align: justify;
     font-size: 12pt;
     padding: 10px;
     line-height: 1.2em;    
     font-weight: 400;
+    color: #ECEFF4;
   }
 
 
   .title {
+    font-family: HandFont;
     color: #ECEFF4;
     padding-bottom: 7px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #4C566A;
+    border-bottom: 3px solid #4C566A;
     font-weight: bold;
     text-align: center;
-    font-size: 14pt;
+    font-size: 20pt;
   }
 
   #table-of-contents {
-    color: black;
-    background: #FFF;
+    color: #ECEFF4;
+    background: #2e3440;
     font-size: 80%;
     padding: .5em;
     margin: 1em -2em 1em 1em;
@@ -32,16 +49,17 @@
   }
 
   #table-of-contents a  {
-    color: #003333;
+    color:  rgb(171, 185, 207);
   }
 
   #table-of-contents a:hover {
-    color: #003333;
+    cursor: pointer;
     text-decoration: underline;
+    color: rgb(99, 113, 137);
   }
 
   #table-of-contents li  {
-    margin: .2em;
+    margin: .5em;
   }
 
   #table-of-contents h2 {
@@ -55,40 +73,43 @@
     background-color: #eeeeee;
     font-size: 80%;
   }
-
-  h1 {
-    font-size: 12pt;
+  hr {
+    border:1px solid #4C566A;
   }
 
-  h2 {
-    font-size: 12pt;
+  h1 {    
+    font-size: 16pt;
+  }
+
+  h2 {    
+    font-size: 14pt;
     padding-bottom: 4px;
     margin-bottom: 5px;
-    border-bottom: 3px solid #DDD;
+    border-bottom: 1px solid #4C566A;
   }
 
   h3 {
-    font-size: 11pt;
-    color: #333333;
+    font-size: 12pt;  
   }
 
   h4 {
-    font-size: 9pt;
+    font-size: 10pt;
   }
 
-  a {
+  a {    
     text-decoration: none;
-    color: #006666
+    color:  rgb(171, 185, 207);
   }
 
   a:visited {
     text-decoration: none;
-    color: #336666
+    color:  rgb(171, 185, 207);
   }
 
   a:hover {
+    cursor: pointer;
     text-decoration: underline;
-    color: #003333
+    color: rgb(99, 113, 137);
   }
 
   .todo {
@@ -132,6 +153,7 @@
 
   img {
     border: none;
+    text-align: center;      
   }
 
   .share img {
@@ -160,8 +182,10 @@
   /* } */
 
   pre {
-      background-color: black;
-      border: 4px solid grey;
+      background-color: rgb(59, 66, 82);
+      font-family: CodeFont;
+      /* border: 4px solid grey; */
+      border: none;
       color: #EEE;
       overflow: auto;
       padding: 1em;
@@ -219,12 +243,6 @@
   .keyword {
     /* font-lock-keyword-face */
     color: #4682b4;
-  }
-  .negation-char {
-  }
-  .regexp-grouping-backslash {
-  }
-  .regexp-grouping-construct {
   }
   .string {
     /* font-lock-string-face */
@@ -867,7 +885,7 @@
   #table-of-contents {
     float: right;
     border: 1px solid #CCC;
-    max-width: 50%;
+    max-width: 100%;
     overflow: auto;
   }
 } /* END OF @media screen */
