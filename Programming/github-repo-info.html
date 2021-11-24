@@ -6,9 +6,9 @@
 <!-- 2021-11-24 mié 13:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>TABULATE INTRO</title>
+<title>GITHUB REPO INFO</title>
 <meta name="author" content="GANESH KURAMSETTI" />
-<meta name="description" content="A discussion on adding an intro in a script or to a file.
+<meta name="description" content="An article showing on how to use github api to retrive data from github.
 Header file
 Footer file." />
 <meta name="generator" content="Org Mode" />
@@ -200,26 +200,26 @@ Footer file." />
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">TABULATE INTRO</h1>
+<h1 class="title">GITHUB REPO INFO</h1>
 <div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org988e4f4">ABOUT</a></li>
-<li><a href="#org7b076e7">WHERE IS IT?</a></li>
-<li><a href="#org2719d1a">ANY PREREQUISITES OR DEPENDENCIES?</a></li>
-<li><a href="#org68345e0">WHAT&rsquo;S IN IT?</a>
+<li><a href="#org6882904">ABOUT</a></li>
+<li><a href="#orgcbe98ac">WHERE IS THE SCRIPT?</a></li>
+<li><a href="#org28603d8">ANY PREREQUISITES OR DEPENDENCIES?</a></li>
+<li><a href="#orgce23c1b">WHAT&rsquo;S IN THE SCRIPT?</a>
 <ul>
-<li><a href="#org9b23164">IMPORTS</a></li>
-<li><a href="#orgbe77b1c">TABULATE</a></li>
-<li><a href="#org4902da7">INTRO INTO FILE</a></li>
-<li><a href="#org4a6dedb">INTRO</a></li>
-<li><a href="#org350a892">MAIN</a></li>
+<li><a href="#org26d0afe">IMPORTS</a></li>
+<li><a href="#orgbed157c">TABULATE</a></li>
+<li><a href="#org0ff857c">INTRO INTO FILE</a></li>
+<li><a href="#org6d344b5">INTRO</a></li>
+<li><a href="#orgdb30498">MAIN</a></li>
 </ul>
 </li>
-<li><a href="#org1d02c6d">HOW TO USE IT?</a></li>
-<li><a href="#orgb2a2f7a">SCREEN SHOTS</a></li>
-<li><a href="#org34f3fae">FUTURE ENHANCEMENTS</a></li>
+<li><a href="#orga1dba9b">HOW TO USE IT?</a></li>
+<li><a href="#orgefd5578">SCREEN SHOTS</a></li>
+<li><a href="#orgf3c10a8">FUTURE ENHANCEMENTS</a></li>
 </ul>
 </div>
 </div>
@@ -243,53 +243,52 @@ Footer file." />
 <i>Hello, from cosmolabs!!! A place where you explore your self!!</i>
 </p>
 
-<div id="outline-container-org988e4f4" class="outline-2">
-<h2 id="org988e4f4">ABOUT</h2>
-<div class="outline-text-2" id="text-org988e4f4">
+<div id="outline-container-org6882904" class="outline-2">
+<h2 id="org6882904">ABOUT</h2>
+<div class="outline-text-2" id="text-org6882904">
 <p>
-Every time when we write a script, it’s a good idea to add an intro which talks what the script is about, what are it’s dependencies, by whom and when the script was written and updated etc. Adding intro’s in each script manually is a tideous task and prone to errors, also, one might see the fromat differences between different scripts.
+Every one knows GitHub, a hub for beautiful, wonderful, useful &#x2026; etc. projects which are mostly open source. The GitHub UI does a pretty good job in showing the repository information of a specific user, but if you want a specif details about the repositories in some of your use cases lets say for more than one user, it difficult fetching through each user page to gather required data. That&rsquo;s where the GitHub api comes for the rescue.
 </p>
 
 <p>
-To solve this problem I wrote a python script which creates a file/script with an intro or adds an intro to the existing
-files/scripts.
-</p>
-</div>
-</div>
-
-<div id="outline-container-org7b076e7" class="outline-2">
-<h2 id="org7b076e7">WHERE IS IT?</h2>
-<div class="outline-text-2" id="text-org7b076e7">
-<p>
-The script hosted at <i><b><a href="https://github.com/cosmolabs/tabulate_intro">github.com/cosmolabs:tabulate-intro</a></b></i> under a GNU GPL V3.0 license.
-</p>
-
-<p>
-<i>A video explaining this is now on YouTube. You can find it <b>@<a href="https://www.youtube.com/watch?v=-SxYao20h2E">cosmolabs:tabulate-intro</a></b></i>
+Using GitHub rest api you can call github and you can retrive the data you need. To make this call and format the data that&rsquo;s retrived I created this python script and I am calling this script as github user info.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org2719d1a" class="outline-2">
-<h2 id="org2719d1a">ANY PREREQUISITES OR DEPENDENCIES?</h2>
-<div class="outline-text-2" id="text-org2719d1a">
+<div id="outline-container-orgcbe98ac" class="outline-2">
+<h2 id="orgcbe98ac">WHERE IS THE SCRIPT?</h2>
+<div class="outline-text-2" id="text-orgcbe98ac">
 <p>
-As it&rsquo;s a python script the python software is obvious. A module called tabulate was used to frame the table structure, it is one of the dependencies to run the actual script but it&rsquo;s included in the repository under lib folder, so there is no need to install the module again if you clone the entire repository.
+The script hosted at <i><b>githubpage</b></i> under a GNU GPL V3.0 license.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org68345e0" class="outline-2">
-<h2 id="org68345e0">WHAT&rsquo;S IN IT?</h2>
-<div class="outline-text-2" id="text-org68345e0">
+<div id="outline-container-org28603d8" class="outline-2">
+<h2 id="org28603d8">ANY PREREQUISITES OR DEPENDENCIES?</h2>
+<div class="outline-text-2" id="text-org28603d8">
+<p>
+As it&rsquo;s a python script the python software is obvious. Two external modules were used in this script one is tabulate and the other is requests. Tabulate module is for framing the data into a neat table format and requests module is for making the api call to GitHub. These 2 modules should be installed explicitly before running the user info script.
+</p>
+
+<p>
+The requirements file is available with in the repo and a simple <i><b>pip3 -r requirements.txt</b></i> will do the trick of installing the dependencies into the system.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgce23c1b" class="outline-2">
+<h2 id="orgce23c1b">WHAT&rsquo;S IN THE SCRIPT?</h2>
+<div class="outline-text-2" id="text-orgce23c1b">
 <p>
 The script consists of functions each has it&rsquo;s own functionality and some useful tricks in python which comes in handy for moderate pythonists.
 </p>
 </div>
 
-<div id="outline-container-org9b23164" class="outline-3">
-<h3 id="org9b23164">IMPORTS</h3>
-<div class="outline-text-3" id="text-org9b23164">
+<div id="outline-container-org26d0afe" class="outline-3">
+<h3 id="org26d0afe">IMPORTS</h3>
+<div class="outline-text-3" id="text-org26d0afe">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">from</span> os <span style="color: #51afef;">import</span> path <span style="color: #51afef;">as</span> io
 <span style="color: #5B6268;"># </span><span style="color: #5B6268;">importing tabulate module from lib folder</span>
@@ -304,9 +303,9 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 </div>
 
-<div id="outline-container-orgbe77b1c" class="outline-3">
-<h3 id="orgbe77b1c">TABULATE</h3>
-<div class="outline-text-3" id="text-orgbe77b1c">
+<div id="outline-container-orgbed157c" class="outline-3">
+<h3 id="orgbed157c">TABULATE</h3>
+<div class="outline-text-3" id="text-orgbed157c">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">tabulate_intro_details</span>(intro_details):
      <span style="color: #51afef;">return</span> tabulate(intro_details, tablefmt=<span style="color: #98be65;">"grid"</span>, colalign=(<span style="color: #98be65;">"left"</span>,))
@@ -321,9 +320,9 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 </div>
 
-<div id="outline-container-org4902da7" class="outline-3">
-<h3 id="org4902da7">INTRO INTO FILE</h3>
-<div class="outline-text-3" id="text-org4902da7">
+<div id="outline-container-org0ff857c" class="outline-3">
+<h3 id="org0ff857c">INTRO INTO FILE</h3>
+<div class="outline-text-3" id="text-org0ff857c">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">add_contents_to_a_file</span>(contents_to_be_added, file_path):
      <span style="color: #51afef;">if</span> io.exists(file_path) <span style="color: #51afef;">and</span> io.isfile(file_path):
@@ -360,9 +359,9 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 </div>
 
-<div id="outline-container-org4a6dedb" class="outline-3">
-<h3 id="org4a6dedb">INTRO</h3>
-<div class="outline-text-3" id="text-org4a6dedb">
+<div id="outline-container-org6d344b5" class="outline-3">
+<h3 id="org6d344b5">INTRO</h3>
+<div class="outline-text-3" id="text-org6d344b5">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">def</span> <span style="color: #c678dd;">get_intro</span>():
      <span style="color: #51afef;">print</span>(<span style="color: #98be65;">"\nEnter the below details: \n"</span>)
@@ -391,9 +390,9 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 </div>
 
-<div id="outline-container-org350a892" class="outline-3">
-<h3 id="org350a892">MAIN</h3>
-<div class="outline-text-3" id="text-org350a892">
+<div id="outline-container-orgdb30498" class="outline-3">
+<h3 id="orgdb30498">MAIN</h3>
+<div class="outline-text-3" id="text-orgdb30498">
 <div class="org-src-container">
 <pre class="src src-python"><span style="color: #51afef;">if</span> <span style="color: #c678dd;">__name__</span> == <span style="color: #98be65;">'__main__'</span>:
      get_intro()
@@ -408,9 +407,9 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 </div>
 
-<div id="outline-container-org1d02c6d" class="outline-2">
-<h2 id="org1d02c6d">HOW TO USE IT?</h2>
-<div class="outline-text-2" id="text-org1d02c6d">
+<div id="outline-container-orga1dba9b" class="outline-2">
+<h2 id="orga1dba9b">HOW TO USE IT?</h2>
+<div class="outline-text-2" id="text-orga1dba9b">
 <p>
 <i>The instructions on how to use the script are same as that of the readme file in the repository.</i>
 </p>
@@ -429,11 +428,11 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 
 
-<div id="outline-container-orgb2a2f7a" class="outline-2">
-<h2 id="orgb2a2f7a">SCREEN SHOTS</h2>
-<div class="outline-text-2" id="text-orgb2a2f7a">
+<div id="outline-container-orgefd5578" class="outline-2">
+<h2 id="orgefd5578">SCREEN SHOTS</h2>
+<div class="outline-text-2" id="text-orgefd5578">
 
-<div id="orgb16200a" class="figure">
+<div id="orge27f358" class="figure">
 <p><img src="../Images/Programming/tabulate-intro/tabulate-intro.png" alt="tabulate-intro.png" title="Overview." align="center" height="500px" width="720px" />
 </p>
 <p><span class="figure-number">Figure 1: </span>tabulate-intro!!!</p>
@@ -441,9 +440,9 @@ The script consists of functions each has it&rsquo;s own functionality and some 
 </div>
 </div>
 
-<div id="outline-container-org34f3fae" class="outline-2">
-<h2 id="org34f3fae">FUTURE ENHANCEMENTS</h2>
-<div class="outline-text-2" id="text-org34f3fae">
+<div id="outline-container-orgf3c10a8" class="outline-2">
+<h2 id="orgf3c10a8">FUTURE ENHANCEMENTS</h2>
+<div class="outline-text-2" id="text-orgf3c10a8">
 <ol class="org-ol">
 <li>Giving an option to the user to reverify all the details entered and modifying the data if required.</li>
 <li>Adjusting the column length to certain characters instead of adding the longer data in one line.</li>
